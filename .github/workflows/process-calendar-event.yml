@@ -14,14 +14,21 @@ jobs:
     # Only run if the issue has the "EVENT TO PUBLISH" label
     if: contains(github.event.issue.labels.*.name, 'EVENT TO PUBLISH')
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     
     permissions:
       contents: write
       issues: write
+      pages: write
+      id-token: write
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT || github.token }}
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -53,12 +60,14 @@ jobs:
       
       - name: Commit and push changes
         if: steps.process.outcome == 'success' || steps.remove.outcome == 'success'
+        id: commit
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add data/
           if git diff --staged --quiet; then
             echo "No changes to commit"
+            echo "changed=false" >> $GITHUB_OUTPUT
           else
             if [ "${{ github.event.action }}" = "closed" ]; then
               git commit -m "Remove calendar event from closed issue #${{ github.event.issue.number }}"
@@ -66,7 +75,23 @@ jobs:
               git commit -m "Update calendar from issue #${{ github.event.issue.number }}"
             fi
             git push
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
+      
+      - name: Setup Pages
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/configure-pages@v4
+      
+      - name: Upload artifact
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'data'
+      
+      - name: Deploy to GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
       
       - name: Comment on issue if successful (add/update)
         if: steps.process.outcome == 'success' && github.event.action != 'closed'
