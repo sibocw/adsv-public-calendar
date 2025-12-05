@@ -1,0 +1,118 @@
+name: Process Calendar Event
+
+on:
+  issues:
+    types: [opened, edited, deleted]
+
+# Ensure only one workflow runs at a time to prevent conflicts
+concurrency:
+  group: calendar-updates
+  cancel-in-progress: false
+
+jobs:
+  process-event:
+    # Only run if the issue has the "EVENT TO PUBLISH" label
+    if: contains(github.event.issue.labels.*.name, 'EVENT TO PUBLISH')
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      issues: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      
+      - name: Install package
+        run: pip install -e .
+      
+      - name: Process issue (add/update)
+        if: github.event.action != 'deleted'
+        id: process
+        run: |
+          python -m calendar_bot.update_calendar \
+            --issue_number "${{ github.event.issue.number }}" \
+            --body "${{ github.event.issue.body }}"
+        continue-on-error: true
+      
+      - name: Remove event (on delete)
+        if: github.event.action == 'deleted'
+        id: remove
+        run: |
+          python -m calendar_bot.update_calendar \
+            --issue_number "${{ github.event.issue.number }}" \
+            --delete
+        continue-on-error: true
+      
+      - name: Commit and push changes
+        if: steps.process.outcome == 'success' || steps.remove.outcome == 'success'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            if [ "${{ github.event.action }}" = "deleted" ]; then
+              git commit -m "Remove calendar event from deleted issue #${{ github.event.issue.number }}"
+            else
+              git commit -m "Update calendar from issue #${{ github.event.issue.number }}"
+            fi
+            git push
+          fi
+      
+      - name: Comment on issue if successful (add/update)
+        if: steps.process.outcome == 'success' && github.event.action != 'deleted'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = context.issue.number;
+            const repoUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}`;
+            const eventFileUrl = `${repoUrl}/blob/main/data/individual_events/ghissue_${issueNumber}.ics`;
+            const calendarFileUrl = `${repoUrl}/blob/main/data/adsv_events_public.ics`;
+            
+            github.rest.issues.createComment({
+              issue_number: issueNumber,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `✅ **Calendar event has been successfully processed and published!**\n\n` +
+                    `📅 [View your event file](${eventFileUrl})\n` +
+                    `📆 [View full calendar](${calendarFileUrl})`
+            })
+      
+      - name: Comment on issue if successful (delete)
+        if: steps.remove.outcome == 'success' && github.event.action == 'deleted'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const repoUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}`;
+            const calendarFileUrl = `${repoUrl}/blob/main/data/adsv_events_public.ics`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🗑️ **Calendar event has been removed.**\n\n` +
+                    `📆 [View updated calendar](${calendarFileUrl})`
+            })
+      
+      - name: Comment on issue if failed
+        if: steps.process.outcome == 'failure' || steps.remove.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `❌ **Failed to process calendar event.**\n\n` +
+                    `Please check that your issue follows the correct format from the template.\n\n` +
+                    `🔍 [View workflow logs](${runUrl}) for details.`
+            })

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calendar-bot"
+version = "0.1.0"
+description = "GitHub issue-based calendar management system"
+requires-python = "==3.13"
+dependencies = [
+    "ics==0.7.2",
+]
+
+[project.scripts]
+calendar-bot = "calendar_bot.update_calendar:main"
+
+[tool.setuptools]
+packages = ["calendar_bot"]

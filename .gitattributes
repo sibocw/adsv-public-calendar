@@ -1,0 +1,4 @@
+# GitHub Pages Configuration
+# This file tells GitHub Pages to serve .ics files with the correct MIME type
+
+*.ics text/calendar
