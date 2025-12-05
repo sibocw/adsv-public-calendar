@@ -2,7 +2,7 @@ name: Process Calendar Event
 
 on:
   issues:
-    types: [opened, edited, deleted]
+    types: [opened, edited, closed]
 
 # Ensure only one workflow runs at a time to prevent conflicts
 concurrency:
@@ -32,7 +32,7 @@ jobs:
         run: pip install -e .
       
       - name: Process issue (add/update)
-        if: github.event.action != 'deleted'
+        if: github.event.action != 'closed'
         id: process
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
@@ -42,8 +42,8 @@ jobs:
             --body "$ISSUE_BODY"
         continue-on-error: true
       
-      - name: Remove event (on delete)
-        if: github.event.action == 'deleted'
+      - name: Remove event (on close)
+        if: github.event.action == 'closed'
         id: remove
         run: |
           python -m calendar_bot.update_calendar \
@@ -61,7 +61,7 @@ jobs:
             echo "No changes to commit"
           else
             if [ "${{ github.event.action }}" = "deleted" ]; then
-              git commit -m "Remove calendar event from deleted issue #${{ github.event.issue.number }}"
+              git commit -m "Remove calendar event from closed issue #${{ github.event.issue.number }}"
             else
               git commit -m "Update calendar from issue #${{ github.event.issue.number }}"
             fi
@@ -69,7 +69,7 @@ jobs:
           fi
       
       - name: Comment on issue if successful (add/update)
-        if: steps.process.outcome == 'success' && github.event.action != 'deleted'
+        if: steps.process.outcome == 'success' && github.event.action != 'closed'
         uses: actions/github-script@v7
         with:
           script: |
@@ -87,8 +87,8 @@ jobs:
                     `📆 [View full calendar](${calendarFileUrl})`
             })
       
-      - name: Comment on issue if successful (delete)
-        if: steps.remove.outcome == 'success' && github.event.action == 'deleted'
+      - name: Comment on issue if successful (close)
+        if: steps.remove.outcome == 'success' && github.event.action == 'closed'
         uses: actions/github-script@v7
         with:
           script: |
