@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:🎄 Final Happy Hour of the Year – Christmas Edition! 🎅\n\nNext Friday the 12th at 5 PM in SV Hall\, join us for the final Happy Hour of the year – 🎄The Christmas Edition🎄\, hosted by the Barth Lab!\n\nWe warmly invite you to a festive gathering featuring Glühwein 🍷 and Christmas cookies & treats 🍪\n\nCome for the holiday drinks\, stay for the cheer! Don’t forget to wear your favorite holiday sweater or accessory to spread the festive spirit.\n\n✨If your lab is interested in hosting Happy Hours in 2026\, just reach out to Dominic (dominic.dallosto@epfl.ch) or Pitt (pitt.meyer@epfl.ch) ✨\n\nLet’s celebrate the season together before the holidays begin – we can’t wait to see you there!\n\nMerry Xmas & happy new year!
+DTEND:20251212T200000Z
+LOCATION:SV Lobby
+DTSTART:20251212T160000Z
+SUMMARY:🎄 ADSV Happy Hour\, by Barth Lab
+UID:ghissue_5
+END:VEVENT
+END:VCALENDAR
