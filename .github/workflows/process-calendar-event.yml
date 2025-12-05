@@ -60,7 +60,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            if [ "${{ github.event.action }}" = "deleted" ]; then
+            if [ "${{ github.event.action }}" = "closed" ]; then
               git commit -m "Remove calendar event from closed issue #${{ github.event.issue.number }}"
             else
               git commit -m "Update calendar from issue #${{ github.event.issue.number }}"
