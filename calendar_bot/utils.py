@@ -51,8 +51,7 @@ def make_event_from_github_issue_str(
             start_dt, end_dt, is_all_day = _parse_time(content)
             if is_all_day:
                 event.begin = start_dt
-                # iCalendar spec: all-day end is exclusive, so add 1 day
-                event.end = end_dt + timedelta(days=1)
+                event.end = end_dt
                 event.make_all_day()
             else:
                 event.begin = start_dt.replace(tzinfo=tzinfo)
