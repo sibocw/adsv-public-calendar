@@ -34,10 +34,12 @@ jobs:
       - name: Process issue (add/update)
         if: github.event.action != 'deleted'
         id: process
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
           python -m calendar_bot.update_calendar \
             --issue_number "${{ github.event.issue.number }}" \
-            --body "${{ github.event.issue.body }}"
+            --body "$ISSUE_BODY"
         continue-on-error: true
       
       - name: Remove event (on delete)
