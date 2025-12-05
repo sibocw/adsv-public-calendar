@@ -1,376 +1,233 @@
 BEGIN:VCALENDAR
-PRODID:-//Google Inc//Google Calendar 70.9054//EN
 VERSION:2.0
-CALSCALE:GREGORIAN
-METHOD:PUBLISH
-X-WR-CALNAME:ADSV Events
-X-WR-TIMEZONE:Europe/Zurich
+PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DTSTART:20251126T170000Z
-DTEND:20251126T200000Z
-DTSTAMP:20251204T130406Z
-UID:6t8fp95j8salphhkfhbtfphceq@google.com
-CREATED:20251112T125203Z
-DESCRIPTION:Forwarded from email titled "Save the date: Neuro Night Show - 
- November 26th 18h00"\, 12.11.2025\n\n====================\n\nHello fellow N
- euro-PhDs!\n \nDon’t forget to register for the next\nNEURO NIGHT SHOW \nst
- arring you and your favorite Neuro-PhDs\, \nwith     FREE drinks and PIZZA!
-  \n \nOn Wednesday\, 26th of November at 18:00 on the Geneva campus (room B
- 01.06).\nWe’re hosting an alumni event featuring former EDNE lab members wh
- o will share their experiences navigating the post-PhD job market.🧑‍🎓🎉 \
- nCheck out the attached flyer for more info!\nPlease let us know if you wan
- t to attend here so we know how much food to order.\nTo reduce the barrier 
- for people travelling between campuses\, the BMI will reimburse your train 
- tickets to attend the event (send your train tickets as a single pdf file t
- o edne@epfl.ch within 2 weeks from the event).\n \nAs a reminder\, what thi
- s is about:\nWe’re having four events per year\, alternating between Geneva
-  and Lausanne\, to try to bridge the gap between the two campuses.\nWe orga
- nize different activities each time to get to know our peers and share some
-  of our science in a chill atmosphere.\nWe are looking forward to seeing ma
- ny of you there!\n \nYour Neuro Night Show hosts\,\nDavide\, Ece\, Elsa\, L
- ana\, Lisa\, Martina\, Nishant\, Pol\, Sophia
-LAST-MODIFIED:20251112T125203Z
-LOCATION:Geneva campus\, B01.06
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:[EDNE] Neuro Night Show
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20251008T160000Z
-DTEND:20251008T180000Z
-DTSTAMP:20251204T130406Z
-UID:56e72fh5u1lbtjovpsddhagrb7@google.com
 CREATED:20251002T145801Z
-DESCRIPTION:ADSV is thrilled to invite you to our first Board Game Night of
-  the semester on Wednesday\, October 8\, starting at 18:00 in AI0353.<br><b
- r>Got a favourite game that makes you unbeatable? Bring it along! Otherwise
- \, we’ve got plenty of classics and surprises waiting for you.<br><br>Snack
- s and drinks will be there to fuel your inner strategist\, but we’d love a 
- hand planning quantities. Please take a moment to fill out this short form:
-  <a href="https://forms.gle/crU1ys7gQsGhvh116">https://forms.gle/crU1ys7gQs
- Ghvh116</a> (access with EPFL account!)
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:ADSV is thrilled to invite you to our first Board Game Night of the semester on Wednesday\, October 8\, starting at 18:00 in AI0353.<br><br>Got a favourite game that makes you unbeatable? Bring it along! Otherwise\, we’ve got plenty of classics and surprises waiting for you.<br><br>Snacks and drinks will be there to fuel your inner strategist\, but we’d love a hand planning quantities. Please take a moment to fill out this short form: <a href="https://forms.gle/crU1ys7gQsGhvh116">https://forms.gle/crU1ys7gQsGhvh116</a> (access with EPFL account!)
+DTEND:20251008T180000Z
 LAST-MODIFIED:20251002T145912Z
 LOCATION:AI0353
-SEQUENCE:0
+DTSTART:20251008T160000Z
 STATUS:CONFIRMED
 SUMMARY:🎲 Board Game Night
 TRANSP:OPAQUE
+UID:56e72fh5u1lbtjovpsddhagrb7@google.com
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20251022T163000Z
-DTEND:20251022T173000Z
-DTSTAMP:20251204T130406Z
-UID:034l0nckh397v2j94k5g2puif0@google.com
-CREATED:20251014T090230Z
-DESCRIPTION:Do you feel rigid like a short double stranded DNA? Join us for
-  a denaturing yoga session on Wednesday\, 22nd October at 6:30 PM<br><br>📍
-  Location: SG foyer <br><br>💰 Fee: 5 CHF per person<br>👉 Sign up &amp\; p
- ay here: <a href="https://forms.gle/8nsFauU4ERm2vVZo8">https://forms.gle/8n
- sFauU4ERm2vVZo8</a><br><br>Don’t forget to bring:<br>- comfy sports clothes
- <br>- a water bottle<br>- your mat (or something to lie on)<br><br>It’ll be
-  the perfect way to unwind mid-week and we’d love to see you there!
-LAST-MODIFIED:20251014T090230Z
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🧘 Yoga with ADSV
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20251119T170000Z
-DTEND:20251119T200000Z
-DTSTAMP:20251204T130406Z
-UID:08vflf0cs9qmhq51b4724e8rh4@google.com
-CREATED:20251117T181753Z
-DESCRIPTION:Wanna enjoy a chill evening filled of strategies\, laughters\, 
- and chance? This without forgetting plenty of snacks and drinks 🍻<br><br>A
- DSV is inviting you to a game night this Wednesday 19th November 2025 in AI
- 0353.<br><br>You can freely bring and share your favorite game\, otherwise 
- there will be some classics available there 😊<br><br>You can register foll
- owing this link using your EPFL account: <a href="https://forms.gle/6MDq3R4
- 5fiWsC9RL7">https://forms.gle/6MDq3R45fiWsC9RL7</a>
-LAST-MODIFIED:20251117T181753Z
-LOCATION:AI 0353
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🎲 Game Night
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250927
-DTEND;VALUE=DATE:20250928
-DTSTAMP:20251204T130406Z
-UID:68ej1pg46ve4uui21sdr2e0sms@google.com
-CREATED:20250910T130436Z
-DESCRIPTION:Join us on September 27th\, 2025 for a scenic hike at the Dent 
- the Vaulion to see 8 lakes\, the Alps and the Mont Blanc! Here's all the in
- fos: <br><br>Brief overview:<br>The hike takes about 3 hours\, is 10 km lon
- g and includes 440 m of elevation. We will start the hike from the train st
- op Le Pont and go up towards the mountain top\, passing a lake. For lunch\,
-  we will stop at the restaurant at the top or you can bring your own lunch 
- and picnic there. After lunch we will return to Le Pont to take the train b
- ack to Lausanne.<br><br>Itinerary: <br>Departure from Lausanne: We’ll take 
- the train at 8:57 in Lausanne until Vallorbe and then at 9:50 until Le Pont
- .<br>Arrival at Le Pont: Approximately 10:00.<br>Lunch at 12:00.<br>Return:
-  We plan to arrive back at the train station around 16:00\, with a return t
- rain between 16:30–17:00 back to Lausanne.<br>ADSV is covering transportati
- on costs for the first 25 participants (with a half-fare card) who sign up 
- via the link below. <br><br>Sign up here:<br><a href="https://docs.google.c
- om/forms/d/e/1FAIpQLSc5LNPntbP3eQfDNw-GZGehJSck-nSIwUrr5BNTmx_E3Gc-2Q/viewf
- orm?usp=header">https://docs.google.com/forms/d/e/1FAIpQLSc5LNPntbP3eQfDNw-
- GZGehJSck-nSIwUrr5BNTmx_E3Gc-2Q/viewform?usp=header</a><br><br>Deadline:<br
- >Please register by Wednesday\, September 24th\, at midnight if you’d like 
- to secure a free train ticket. After that\, you’re still welcome to join th
- e hike\, but you’ll need to cover your own transportation costs.<br><br>Wha
- t to bring:<br>Plenty of water<br>Snacks or lunch (if you prefer not to eat
-  at the restaurant)<br>Sunscreen<br>Your SBB half-fare card<br>Comfortable 
- hiking shoes<br> <br>Links for more info on the hike and restaurant:<br><a 
- href="https://schweizmobil.ch/en/hiking-in-switzerland/route-117">https://s
- chweizmobil.ch/en/hiking-in-switzerland/route-117</a><br><a href="https://c
- haletbuvettedeladentdevaulion.com/">https://chaletbuvettedeladentdevaulion.
- com/</a>
-LAST-MODIFIED:20250919T191953Z
-LOCATION:Dent de Vaulion: https://schweizmobil.ch/en/hiking-in-switzerland/
- route-117
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:⛰️ ADSV Summer Hike
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20250917T163000Z
-DTEND:20250917T183000Z
-DTSTAMP:20251204T130406Z
-UID:2gfvvr0g1fi8a6rg77c28lsk7l@google.com
-CREATED:20250910T094950Z
-DESCRIPTION:Want to make the most of these last summer evenings? Join us fo
- r a relaxing yoga session on Wednesday\, 17th September at 6:30 PM.<br><br>
- 📍 Location: Parc Bourget (if the weather’s nice)\, otherwise we’ll move in
- doors to the SG foyer. We’ll confirm the exact spot by email 30 minutes bef
- ore the event.<br><br>💰 Fee: 5 CHF per person<br>👉 Sign up &amp\; pay her
- e: Google Form <a href="https://forms.gle/Z4SGCq7WPKrAPGqC9">https://forms.
- gle/Z4SGCq7WPKrAPGqC9</a><br><br>Don’t forget to bring:<br>- comfy sports c
- lothes<br>- a water bottle<br>- your mat (or something to lie on)<br><br>It
- ’ll be the perfect way to unwind mid-week and we’d love to see you there!
-LAST-MODIFIED:20250910T095807Z
-LOCATION:Parc Bourget\, or SG foyer in case of bad weather
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🧘 Yoga with ADSV
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20250911T150000Z
-DTEND:20250911T180000Z
-DTSTAMP:20251204T130406Z
-UID:5vclp3a24tthmj9r1p8e4kk8on@google.com
-CREATED:20250910T095154Z
-DESCRIPTION:This upcoming Thursday\, September 11th\, at 5 pm in the SV Hal
- l\, finally resurrected from the summer break brought to you by the amazing
-  and always motivated Thomä lab: SV HAPPY HOUR!!!\n\nThe leaves are turning
- \, the air is crisp\, and it’s officially sweater weather! Let’s welcome fa
- ll together with cozy vibes\, good company\, and seasonal treats. 🍂\n\nSip
-  on apple cider\, enjoy a hint of cinnamon\, and unwind as we toast to the 
- golden glow of autumn evenings. 🍁\n\nIf you and your lab want to contest o
- ur dear Happy Hour MVPs from the Thomä lab on who are the best hosts please
-  don’t hesitate to reach out to our new Happy Hour coordinators from ADSV\,
-  Dominic (dominic.dallosto@epfl.ch) or Pitt (pitt.meyer@epfl.ch). \n\nHave 
- an amazing weekend and we can't wait to see you on Thursday!
-LAST-MODIFIED:20250910T121234Z
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🎊 Happy Hour—hosted by Thomä lab
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20251121T160000Z
-DTEND:20251121T200000Z
-DTSTAMP:20251204T130406Z
-UID:3ucr2np0na6c04kq5aq4uumpmb@google.com
-CREATED:20251117T181559Z
-DESCRIPTION:It’s that time of year again — the beards are growing and the m
- ustaches are showing! 🧔✨\nJoin us on Friday\, November 21st at 5 pm in SV 
- Hall for a spectacular No Shave November Happy Hour\, proudly hosted by the
-  fabulously fresh-faced Gönczy Lab!\n\nWhether you're rocking a real mustac
- he\, a drawn-on doodle\, or a printed masterpiece\, we want to see your bes
- t ‘stache style. Come for the drinks\, stay for the laughs\, and let your f
- acial hair do the talking! 😄🍺\n\n🎩 Mustache Mandate: Real\, fake\, print
- ed\, or painted — all mustaches welcome!\n\n✨ Want to host your own Happy H
- our in 2025? Just send an email to Dominic (dominic.dallosto@epfl.ch) or Pi
- tt (pitt.meyer@epfl.ch) and claim your spot!\n\nWe can’t wait to see you — 
- mustaches and all — on the 21st! 🥳
-LAST-MODIFIED:20251117T181623Z
-LOCATION:SV lobby
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:✨ Happy Hour (hosted by Gönczy Lab)
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20251126T173000Z
-DTEND:20251126T193000Z
-DTSTAMP:20251204T130406Z
-UID:1edp64ptikp543k9dcpra95m0e@google.com
-CREATED:20251124T115655Z
-DESCRIPTION:Need to disconnect from your project for a moment? Join us for 
- a calming yoga session to reconnect with yourself.<br><br>Location: SG Foye
- r<br>Registration (5.- fee): <a href="https://forms.gle/7WnjxCFzWjiqwrJY7">
- https://forms.gle/7WnjxCFzWjiqwrJY7</a><br><br>Don’t forget your mat and co
- mfortable clothes so you can fully enjoy the experience!
-LAST-MODIFIED:20251124T115655Z
-LOCATION:SG Foyer
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🧘 ADSV Yoga Session
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20251125T140000Z
-DTEND:20251125T143000Z
-DTSTAMP:20251204T130406Z
-UID:0ekqlm9aoenfc1d2of1o7va1sf@google.com
-CREATED:20251124T115259Z
-DESCRIPTION:Take a moment to unwind with beverages\, snacks\, and friendly 
- conversations!\n\nLocation: SV Ornithorynque (next to SV1717)\n\nDon’t forg
- et to bring your favorite mug!\n\nFor newcomers: Tea Time Tuesday is an ADS
- V tradition where we prepare coffee/tea\, snacks\, and cozy vibes so you ca
- n pause your work for a bit and chat with fellow Ph.D. friends. Everyone is
-  welcome
-LAST-MODIFIED:20251124T115259Z
-LOCATION:SV Ornithorynque (next to SV1717)
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🍵 Tea Time Tuesday
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20250930T130000Z
-DTEND:20250930T140000Z
-DTSTAMP:20251204T130406Z
-UID:4vcj01b9rd5k63haj50t6fkenp@google.com
-CREATED:20250926T135325Z
-DESCRIPTION:Let’s meet up next week for Tea Time Tuesday at 15:00 in SV hal
- l for beverages\, snacks\, and nice conversations. In case there is an even
- t happening in SV hall\, we will move to SV Ornithorynque\, right around th
- e corner!\n \nDon’t forget to bring a mug and see you then!\n \nFor those t
- hat are new: Tea Time Tuesday is an ADSV tradition where we prep coffee/tea
- \, snacks\, and good vibes for in-between experiment relaxation\, where you
-  can stop by to chat with us\, with your friends\, or with others that show
-  up!\n \nSee you then! :)
-LAST-MODIFIED:20250926T135325Z
-LOCATION:SV hall\, or SV Ornithorynque if SV hall is busy
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🍵 Tea Time Tuesday
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20251212T180000Z
-DTEND:20251212T220000Z
-DTSTAMP:20251204T130406Z
-UID:1eode9nhpnhmpb49iret2ftv35@google.com
-CREATED:20251112T125409Z
-DESCRIPTION:Forwarded from email titled "Save the Date // BMI End of Year P
- arty - 12.12.2025" from brain_mind@epfl.ch
-LAST-MODIFIED:20251112T125409Z
-LOCATION:Millennium\, Chem. de Mongevon 25\, 1023 Crissier\, Switzerland
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:[BMI] End of Year Party
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20251016T130000Z
-DTEND:20251016T140000Z
-DTSTAMP:20251204T130406Z
-UID:2dmkjtntnih54h4a263ri1tki2@google.com
 CREATED:20251015T080559Z
-DESCRIPTION:Let’s meet up tomorrow for Tea Time Thursday at 15:00 in SV hal
- l for beverages\, snacks\, and nice conversations\nIn case there is an even
- t happening in SV hall\, we will move to SV Ornithorynque\, right around th
- e corner!\n \nDon’t forget to bring a mug and see you then!\n \nFor those t
- hat are new: Tea Time Tuesday/Thursday is an ADSV tradition where we prep c
- offee\, tea\, snacks and good vibes for in-between experiment relaxation\, 
- where you can stop by to chat with us\, with your friends\, or with others 
- that show up!
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Let’s meet up tomorrow for Tea Time Thursday at 15:00 in SV hall for beverages\, snacks\, and nice conversations\nIn case there is an event happening in SV hall\, we will move to SV Ornithorynque\, right around the corner!\n \nDon’t forget to bring a mug and see you then!\n \nFor those that are new: Tea Time Tuesday/Thursday is an ADSV tradition where we prep coffee\, tea\, snacks and good vibes for in-between experiment relaxation\, where you can stop by to chat with us\, with your friends\, or with others that show up!
+DTEND:20251016T140000Z
 LAST-MODIFIED:20251015T080559Z
 LOCATION:SV lobby\, or Ornithorynque if lobby is occupied
-SEQUENCE:0
+DTSTART:20251016T130000Z
 STATUS:CONFIRMED
 SUMMARY:🍵 Tea Time Thursday
 TRANSP:OPAQUE
+UID:2dmkjtntnih54h4a263ri1tki2@google.com
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20251015T160000Z
-DTEND:20251015T190000Z
-DTSTAMP:20251204T130406Z
-UID:15sfthci9o6lsmse39o6l43doe@google.com
-CREATED:20251008T204113Z
-DESCRIPTION:With the start of the semester\, many new PhD students have joi
- ned the four doctoral schools\, so it’s the perfect time to get together! W
- e’re organizing a PhD Mixer Dinner on Wednesday\, October 15\, in the SV Ha
- ll. It will be an informal evening with free pizza and drinks\, where you c
- an meet your fellow PhDs.\n\nThis event is especially dedicated to first ye
- ar PhD students\, but all of you are warmly welcome to join to meet the new
-  students and volunteer as “coaches”\, share your advice\, stories\, and he
- lp newcomers feel at home at EPFL!\nPlease RSVP here before sunday so we ca
- n plan the food accordingly :\nhttps://forms.gle/stRcQAmKKo7TFgXs5\n\nIf yo
- u can’t make it\, don’t worry! We are always planning events for the PhD co
- mmunity\, so you can join our whatsapp channel\, subscribe to the mailing l
- ist\, add our shared calendar\, and stay tuned for our emails!
-LAST-MODIFIED:20251008T204134Z
+CREATED:20250926T135325Z
 SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Let’s meet up next week for Tea Time Tuesday at 15:00 in SV hall for beverages\, snacks\, and nice conversations. In case there is an event happening in SV hall\, we will move to SV Ornithorynque\, right around the corner!\n \nDon’t forget to bring a mug and see you then!\n \nFor those that are new: Tea Time Tuesday is an ADSV tradition where we prep coffee/tea\, snacks\, and good vibes for in-between experiment relaxation\, where you can stop by to chat with us\, with your friends\, or with others that show up!\n \nSee you then! :)
+DTEND:20250930T140000Z
+LAST-MODIFIED:20250926T135325Z
+LOCATION:SV hall\, or SV Ornithorynque if SV hall is busy
+DTSTART:20250930T130000Z
 STATUS:CONFIRMED
-SUMMARY:👐 New PhD students welcome dinner
+SUMMARY:🍵 Tea Time Tuesday
 TRANSP:OPAQUE
+UID:4vcj01b9rd5k63haj50t6fkenp@google.com
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20251024T150000Z
-DTEND:20251024T180000Z
+CREATED:20251117T181559Z
+SEQUENCE:0
 DTSTAMP:20251204T130406Z
-UID:5eej2tn8tg8a34s6ng8asnv7oc@google.com
+DESCRIPTION:It’s that time of year again — the beards are growing and the mustaches are showing! 🧔✨\nJoin us on Friday\, November 21st at 5 pm in SV Hall for a spectacular No Shave November Happy Hour\, proudly hosted by the fabulously fresh-faced Gönczy Lab!\n\nWhether you're rocking a real mustache\, a drawn-on doodle\, or a printed masterpiece\, we want to see your best ‘stache style. Come for the drinks\, stay for the laughs\, and let your facial hair do the talking! 😄🍺\n\n🎩 Mustache Mandate: Real\, fake\, printed\, or painted — all mustaches welcome!\n\n✨ Want to host your own Happy Hour in 2025? Just send an email to Dominic (dominic.dallosto@epfl.ch) or Pitt (pitt.meyer@epfl.ch) and claim your spot!\n\nWe can’t wait to see you — mustaches and all — on the 21st! 🥳
+DTEND:20251121T200000Z
+LAST-MODIFIED:20251117T181623Z
+LOCATION:SV lobby
+DTSTART:20251121T160000Z
+STATUS:CONFIRMED
+SUMMARY:✨ Happy Hour (hosted by Gönczy Lab)
+TRANSP:OPAQUE
+UID:3ucr2np0na6c04kq5aq4uumpmb@google.com
+END:VEVENT
+BEGIN:VEVENT
 CREATED:20250910T095435Z
-DESCRIPTION:Halloween is coming! And what does Halloween mean?\n— Pumpkins!
-  Skeletons! Candy!\n\nIt means spiders. And what do spiders do?\n— Make web
- s! Have too many legs! Scare me out of my bathroom!\n\nThey catch flies. An
- d what do flies like the most?\n— Fruit! Wine! Music! Good company!\n\nClos
- e enough... And where can you find all these key ingredients and more???\n\
- n\nTHAT'S RIGHT! SV Happy Hour is back this Friday—24 October at 5 pm in th
- e SV Hall—brought to you by the Ramdya lab.\n\nJoin us for an array of snac
- ks\, drinks\, music\, and good company. As well as the unusual chance to in
- habit the brain of a fruit fly for a few fleeting moments. 🪰🎃
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Halloween is coming! And what does Halloween mean?\n— Pumpkins! Skeletons! Candy!\n\nIt means spiders. And what do spiders do?\n— Make webs! Have too many legs! Scare me out of my bathroom!\n\nThey catch flies. And what do flies like the most?\n— Fruit! Wine! Music! Good company!\n\nClose enough... And where can you find all these key ingredients and more???\n\n\nTHAT'S RIGHT! SV Happy Hour is back this Friday—24 October at 5 pm in the SV Hall—brought to you by the Ramdya lab.\n\nJoin us for an array of snacks\, drinks\, music\, and good company. As well as the unusual chance to inhabit the brain of a fruit fly for a few fleeting moments. 🪰🎃
+DTEND:20251024T180000Z
 LAST-MODIFIED:20251020T153433Z
 LOCATION:SV lobby
-SEQUENCE:0
+DTSTART:20251024T150000Z
 STATUS:CONFIRMED
 SUMMARY:🎃🪰 Happy Hour — hosted by Ramdya lab
 TRANSP:OPAQUE
+UID:5eej2tn8tg8a34s6ng8asnv7oc@google.com
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20250917T160000Z
-DTEND:20250917T183000Z
+CREATED:20251014T090230Z
+SEQUENCE:0
 DTSTAMP:20251204T130406Z
-UID:06tapdmdgme44gvsgg74u0m2l4@google.com
+DESCRIPTION:Do you feel rigid like a short double stranded DNA? Join us for a denaturing yoga session on Wednesday\, 22nd October at 6:30 PM<br><br>📍 Location: SG foyer <br><br>💰 Fee: 5 CHF per person<br>👉 Sign up &amp\; pay here: <a href="https://forms.gle/8nsFauU4ERm2vVZo8">https://forms.gle/8nsFauU4ERm2vVZo8</a><br><br>Don’t forget to bring:<br>- comfy sports clothes<br>- a water bottle<br>- your mat (or something to lie on)<br><br>It’ll be the perfect way to unwind mid-week and we’d love to see you there!
+DTEND:20251022T173000Z
+LAST-MODIFIED:20251014T090230Z
+DTSTART:20251022T163000Z
+STATUS:CONFIRMED
+SUMMARY:🧘 Yoga with ADSV
+TRANSP:OPAQUE
+UID:034l0nckh397v2j94k5g2puif0@google.com
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20251124T115259Z
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Take a moment to unwind with beverages\, snacks\, and friendly conversations!\n\nLocation: SV Ornithorynque (next to SV1717)\n\nDon’t forget to bring your favorite mug!\n\nFor newcomers: Tea Time Tuesday is an ADSV tradition where we prepare coffee/tea\, snacks\, and cozy vibes so you can pause your work for a bit and chat with fellow Ph.D. friends. Everyone is welcome
+DTEND:20251125T143000Z
+LAST-MODIFIED:20251124T115259Z
+LOCATION:SV Ornithorynque (next to SV1717)
+DTSTART:20251125T140000Z
+STATUS:CONFIRMED
+SUMMARY:🍵 Tea Time Tuesday
+TRANSP:OPAQUE
+UID:0ekqlm9aoenfc1d2of1o7va1sf@google.com
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Join us for the ADSV happy hour this Friday\, hosted by the XXX Lab.\nSome more information blah blah blah.\nBlah.
+DTEND:20241130T200000Z
+LOCATION:SV Lobby
+DTSTART:20241130T160000Z
+SUMMARY:😃 ADSV Happy Hour
+UID:ghissue_3
+END:VEVENT
+BEGIN:VEVENT
 CREATED:20250910T095713Z
-DESCRIPTION:This is a forwarded EDNE event\n==========\nHello fellow Neuro-
- PhDs!\n \nWe’re happy to announce the next \nNEURO NIGHT SHOW \nstarring yo
- u and your favorite Neuro-PhDs\, \nwith FREE drinks and PIZZA!\nOn Wednesda
- y\, 17th of September at 18:00 on the Lausanne campus.\nIf the weather is n
- ice\, we will have pizza at the lake! 🚣🍕☀️\nPlease let us know if you wan
- t to attend here so we know how much food to order.\nTo reduce the barrier 
- for people travelling between campuses\, the BMI will reimburse your train 
- tickets to attend the event.\n \nWhat this is about:\nWe’re having four eve
- nts per year\, alternating between Geneva and Lausanne\, to try to bridge t
- he gap between the two campuses.\nWe organize different activities each tim
- e to get to know our peers and share some of our science in a chill atmosph
- ere.\nWe are looking forward to seeing many of you there!\n \nYour Neuro Ni
- ght Show hosts\,\nDavide\, Ece\, Elsa\, Lana\, Lisa\, Martina\, Pol\, Sophi
- a
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:This is a forwarded EDNE event\n==========\nHello fellow Neuro-PhDs!\n \nWe’re happy to announce the next \nNEURO NIGHT SHOW \nstarring you and your favorite Neuro-PhDs\, \nwith FREE drinks and PIZZA!\nOn Wednesday\, 17th of September at 18:00 on the Lausanne campus.\nIf the weather is nice\, we will have pizza at the lake! 🚣🍕☀️\nPlease let us know if you want to attend here so we know how much food to order.\nTo reduce the barrier for people travelling between campuses\, the BMI will reimburse your train tickets to attend the event.\n \nWhat this is about:\nWe’re having four events per year\, alternating between Geneva and Lausanne\, to try to bridge the gap between the two campuses.\nWe organize different activities each time to get to know our peers and share some of our science in a chill atmosphere.\nWe are looking forward to seeing many of you there!\n \nYour Neuro Night Show hosts\,\nDavide\, Ece\, Elsa\, Lana\, Lisa\, Martina\, Pol\, Sophia
+DTEND:20250917T183000Z
 LAST-MODIFIED:20250910T095727Z
 LOCATION:Lausanne campus
-SEQUENCE:0
+DTSTART:20250917T160000Z
 STATUS:CONFIRMED
 SUMMARY:EDNE Neuro Night Show
 TRANSP:OPAQUE
+UID:06tapdmdgme44gvsgg74u0m2l4@google.com
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20250910T130436Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20250927
+DTEND;VALUE=DATE:20250928
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Join us on September 27th\, 2025 for a scenic hike at the Dent the Vaulion to see 8 lakes\, the Alps and the Mont Blanc! Here's all the infos: <br><br>Brief overview:<br>The hike takes about 3 hours\, is 10 km long and includes 440 m of elevation. We will start the hike from the train stop Le Pont and go up towards the mountain top\, passing a lake. For lunch\, we will stop at the restaurant at the top or you can bring your own lunch and picnic there. After lunch we will return to Le Pont to take the train back to Lausanne.<br><br>Itinerary: <br>Departure from Lausanne: We’ll take the train at 8:57 in Lausanne until Vallorbe and then at 9:50 until Le Pont.<br>Arrival at Le Pont: Approximately 10:00.<br>Lunch at 12:00.<br>Return: We plan to arrive back at the train station around 16:00\, with a return train between 16:30–17:00 back to Lausanne.<br>ADSV is covering transportation costs for the first 25 participants (with a half-fare card) who sign up via the link below. <br><br>Sign up here:<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSc5LNPntbP3eQfDNw-GZGehJSck-nSIwUrr5BNTmx_E3Gc-2Q/viewform?usp=header">https://docs.google.com/forms/d/e/1FAIpQLSc5LNPntbP3eQfDNw-GZGehJSck-nSIwUrr5BNTmx_E3Gc-2Q/viewform?usp=header</a><br><br>Deadline:<br>Please register by Wednesday\, September 24th\, at midnight if you’d like to secure a free train ticket. After that\, you’re still welcome to join the hike\, but you’ll need to cover your own transportation costs.<br><br>What to bring:<br>Plenty of water<br>Snacks or lunch (if you prefer not to eat at the restaurant)<br>Sunscreen<br>Your SBB half-fare card<br>Comfortable hiking shoes<br> <br>Links for more info on the hike and restaurant:<br><a href="https://schweizmobil.ch/en/hiking-in-switzerland/route-117">https://schweizmobil.ch/en/hiking-in-switzerland/route-117</a><br><a href="https://chaletbuvettedeladentdevaulion.com/">https://chaletbuvettedeladentdevaulion.com/</a>
+LAST-MODIFIED:20250919T191953Z
+LOCATION:Dent de Vaulion: https://schweizmobil.ch/en/hiking-in-switzerland/route-117
+STATUS:CONFIRMED
+SUMMARY:⛰️ ADSV Summer Hike
+TRANSP:TRANSPARENT
+UID:68ej1pg46ve4uui21sdr2e0sms@google.com
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20251008T204113Z
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:With the start of the semester\, many new PhD students have joined the four doctoral schools\, so it’s the perfect time to get together! We’re organizing a PhD Mixer Dinner on Wednesday\, October 15\, in the SV Hall. It will be an informal evening with free pizza and drinks\, where you can meet your fellow PhDs.\n\nThis event is especially dedicated to first year PhD students\, but all of you are warmly welcome to join to meet the new students and volunteer as “coaches”\, share your advice\, stories\, and help newcomers feel at home at EPFL!\nPlease RSVP here before sunday so we can plan the food accordingly :\nhttps://forms.gle/stRcQAmKKo7TFgXs5\n\nIf you can’t make it\, don’t worry! We are always planning events for the PhD community\, so you can join our whatsapp channel\, subscribe to the mailing list\, add our shared calendar\, and stay tuned for our emails!
+DTEND:20251015T190000Z
+LAST-MODIFIED:20251008T204134Z
+DTSTART:20251015T160000Z
+STATUS:CONFIRMED
+SUMMARY:👐 New PhD students welcome dinner
+TRANSP:OPAQUE
+UID:15sfthci9o6lsmse39o6l43doe@google.com
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20251124T115655Z
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Need to disconnect from your project for a moment? Join us for a calming yoga session to reconnect with yourself.<br><br>Location: SG Foyer<br>Registration (5.- fee): <a href="https://forms.gle/7WnjxCFzWjiqwrJY7">https://forms.gle/7WnjxCFzWjiqwrJY7</a><br><br>Don’t forget your mat and comfortable clothes so you can fully enjoy the experience!
+DTEND:20251126T193000Z
+LAST-MODIFIED:20251124T115655Z
+LOCATION:SG Foyer
+DTSTART:20251126T173000Z
+STATUS:CONFIRMED
+SUMMARY:🧘 ADSV Yoga Session
+TRANSP:OPAQUE
+UID:1edp64ptikp543k9dcpra95m0e@google.com
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20251117T181753Z
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Wanna enjoy a chill evening filled of strategies\, laughters\, and chance? This without forgetting plenty of snacks and drinks 🍻<br><br>ADSV is inviting you to a game night this Wednesday 19th November 2025 in AI0353.<br><br>You can freely bring and share your favorite game\, otherwise there will be some classics available there 😊<br><br>You can register following this link using your EPFL account: <a href="https://forms.gle/6MDq3R45fiWsC9RL7">https://forms.gle/6MDq3R45fiWsC9RL7</a>
+DTEND:20251119T200000Z
+LAST-MODIFIED:20251117T181753Z
+LOCATION:AI 0353
+DTSTART:20251119T170000Z
+STATUS:CONFIRMED
+SUMMARY:🎲 Game Night
+TRANSP:OPAQUE
+UID:08vflf0cs9qmhq51b4724e8rh4@google.com
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20250910T095154Z
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:This upcoming Thursday\, September 11th\, at 5 pm in the SV Hall\, finally resurrected from the summer break brought to you by the amazing and always motivated Thomä lab: SV HAPPY HOUR!!!\n\nThe leaves are turning\, the air is crisp\, and it’s officially sweater weather! Let’s welcome fall together with cozy vibes\, good company\, and seasonal treats. 🍂\n\nSip on apple cider\, enjoy a hint of cinnamon\, and unwind as we toast to the golden glow of autumn evenings. 🍁\n\nIf you and your lab want to contest our dear Happy Hour MVPs from the Thomä lab on who are the best hosts please don’t hesitate to reach out to our new Happy Hour coordinators from ADSV\, Dominic (dominic.dallosto@epfl.ch) or Pitt (pitt.meyer@epfl.ch). \n\nHave an amazing weekend and we can't wait to see you on Thursday!
+DTEND:20250911T180000Z
+LAST-MODIFIED:20250910T121234Z
+DTSTART:20250911T150000Z
+STATUS:CONFIRMED
+SUMMARY:🎊 Happy Hour—hosted by Thomä lab
+TRANSP:OPAQUE
+UID:5vclp3a24tthmj9r1p8e4kk8on@google.com
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20251112T125203Z
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Forwarded from email titled "Save the date: Neuro Night Show - November 26th 18h00"\, 12.11.2025\n\n====================\n\nHello fellow Neuro-PhDs!\n \nDon’t forget to register for the next\nNEURO NIGHT SHOW \nstarring you and your favorite Neuro-PhDs\, \nwith     FREE drinks and PIZZA! \n \nOn Wednesday\, 26th of November at 18:00 on the Geneva campus (room B01.06).\nWe’re hosting an alumni event featuring former EDNE lab members who will share their experiences navigating the post-PhD job market.🧑‍🎓🎉 \nCheck out the attached flyer for more info!\nPlease let us know if you want to attend here so we know how much food to order.\nTo reduce the barrier for people travelling between campuses\, the BMI will reimburse your train tickets to attend the event (send your train tickets as a single pdf file to edne@epfl.ch within 2 weeks from the event).\n \nAs a reminder\, what this is about:\nWe’re having four events per year\, alternating between Geneva and Lausanne\, to try to bridge the gap between the two campuses.\nWe organize different activities each time to get to know our peers and share some of our science in a chill atmosphere.\nWe are looking forward to seeing many of you there!\n \nYour Neuro Night Show hosts\,\nDavide\, Ece\, Elsa\, Lana\, Lisa\, Martina\, Nishant\, Pol\, Sophia
+DTEND:20251126T200000Z
+LAST-MODIFIED:20251112T125203Z
+LOCATION:Geneva campus\, B01.06
+DTSTART:20251126T170000Z
+STATUS:CONFIRMED
+SUMMARY:[EDNE] Neuro Night Show
+TRANSP:OPAQUE
+UID:6t8fp95j8salphhkfhbtfphceq@google.com
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20251112T125409Z
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Forwarded from email titled "Save the Date // BMI End of Year Party - 12.12.2025" from brain_mind@epfl.ch
+DTEND:20251212T220000Z
+LAST-MODIFIED:20251112T125409Z
+LOCATION:Millennium\, Chem. de Mongevon 25\, 1023 Crissier\, Switzerland
+DTSTART:20251212T180000Z
+STATUS:CONFIRMED
+SUMMARY:[BMI] End of Year Party
+TRANSP:OPAQUE
+UID:1eode9nhpnhmpb49iret2ftv35@google.com
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20250910T094950Z
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Want to make the most of these last summer evenings? Join us for a relaxing yoga session on Wednesday\, 17th September at 6:30 PM.<br><br>📍 Location: Parc Bourget (if the weather’s nice)\, otherwise we’ll move indoors to the SG foyer. We’ll confirm the exact spot by email 30 minutes before the event.<br><br>💰 Fee: 5 CHF per person<br>👉 Sign up &amp\; pay here: Google Form <a href="https://forms.gle/Z4SGCq7WPKrAPGqC9">https://forms.gle/Z4SGCq7WPKrAPGqC9</a><br><br>Don’t forget to bring:<br>- comfy sports clothes<br>- a water bottle<br>- your mat (or something to lie on)<br><br>It’ll be the perfect way to unwind mid-week and we’d love to see you there!
+DTEND:20250917T183000Z
+LAST-MODIFIED:20250910T095807Z
+LOCATION:Parc Bourget\, or SG foyer in case of bad weather
+DTSTART:20250917T163000Z
+STATUS:CONFIRMED
+SUMMARY:🧘 Yoga with ADSV
+TRANSP:OPAQUE
+UID:2gfvvr0g1fi8a6rg77c28lsk7l@google.com
 END:VEVENT
 END:VCALENDAR
