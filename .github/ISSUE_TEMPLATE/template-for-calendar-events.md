@@ -31,7 +31,7 @@ Blah.
 
 ### Time
 Follow format below, summer time will be handled automatically.
-For whole-day events (e.g. ski retreat), write dates only (e.g. "FROM 2024-02-15 TO 2024-02-17"). For one-day events, set start and end to the same date.
+For whole-day events (e.g. ski retreat), write dates only (e.g. "FROM 2024-02-15 TO 2024-02-17", inclusive!). For one-day events, set start and end to the same date.
 ```
 FROM 2024-11-30 17:00:00 TO 2024-11-30 21:00:00
 ```
