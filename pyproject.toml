@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "calendar-bot"
 version = "0.1.0"
-description = "GitHub discussion-based calendar management system"
+description = "A bot that manages a public ICS web calendar based on events specified via GitHub Discussion Board."
 requires-python = ">=3.13,<3.14"
 dependencies = [
     "ics==0.7.2",
