@@ -16,8 +16,8 @@ body:
       description: |
         The text body of the calendar event. Plain text only (emojis OK).
       value: |
-        The text editor box says "Markdown is supported", but it's not true for calendar events.
-        Please use plain text only (emojis and other Unicode characters are OK).
+        Plain text only (emojis and other Unicode characters are OK).
+      render: plain text
     validations:
       required: true
   - type: input
