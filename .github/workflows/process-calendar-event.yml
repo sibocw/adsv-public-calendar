@@ -132,7 +132,7 @@ jobs:
               body: `✅ **Calendar event has been successfully processed and published!**\n\n` +
                     `📅 [View your event file](${eventFileUrl})\n` +
                     `📆 [View full calendar](${calendarFileUrl})\n\n` +
-                    `**You can close this discussion to remove the event from the calendar.**``
+                    `**You can close this discussion to remove the event from the calendar.**`
             });
       
       - name: Comment on discussion if successful (delete)
