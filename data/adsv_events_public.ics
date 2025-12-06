@@ -58,20 +58,6 @@ TRANSP:OPAQUE
 UID:3ucr2np0na6c04kq5aq4uumpmb@google.com
 END:VEVENT
 BEGIN:VEVENT
-CREATED:20250910T094950Z
-SEQUENCE:0
-DTSTAMP:20251204T130406Z
-DESCRIPTION:Want to make the most of these last summer evenings? Join us for a relaxing yoga session on Wednesday\, 17th September at 6:30 PM.<br><br>📍 Location: Parc Bourget (if the weather’s nice)\, otherwise we’ll move indoors to the SG foyer. We’ll confirm the exact spot by email 30 minutes before the event.<br><br>💰 Fee: 5 CHF per person<br>👉 Sign up &amp\; pay here: Google Form <a href="https://forms.gle/Z4SGCq7WPKrAPGqC9">https://forms.gle/Z4SGCq7WPKrAPGqC9</a><br><br>Don’t forget to bring:<br>- comfy sports clothes<br>- a water bottle<br>- your mat (or something to lie on)<br><br>It’ll be the perfect way to unwind mid-week and we’d love to see you there!
-DTEND:20250917T183000Z
-LAST-MODIFIED:20250910T095807Z
-LOCATION:Parc Bourget\, or SG foyer in case of bad weather
-DTSTART:20250917T163000Z
-STATUS:CONFIRMED
-SUMMARY:🧘 Yoga with ADSV
-TRANSP:OPAQUE
-UID:2gfvvr0g1fi8a6rg77c28lsk7l@google.com
-END:VEVENT
-BEGIN:VEVENT
 CREATED:20250910T095435Z
 SEQUENCE:0
 DTSTAMP:20251204T130406Z
@@ -121,26 +107,32 @@ TRANSP:OPAQUE
 UID:0ekqlm9aoenfc1d2of1o7va1sf@google.com
 END:VEVENT
 BEGIN:VEVENT
-CREATED:20251112T125203Z
+CREATED:20250910T095713Z
 SEQUENCE:0
 DTSTAMP:20251204T130406Z
-DESCRIPTION:Forwarded from email titled "Save the date: Neuro Night Show - November 26th 18h00"\, 12.11.2025\n\n====================\n\nHello fellow Neuro-PhDs!\n \nDon’t forget to register for the next\nNEURO NIGHT SHOW \nstarring you and your favorite Neuro-PhDs\, \nwith     FREE drinks and PIZZA! \n \nOn Wednesday\, 26th of November at 18:00 on the Geneva campus (room B01.06).\nWe’re hosting an alumni event featuring former EDNE lab members who will share their experiences navigating the post-PhD job market.🧑‍🎓🎉 \nCheck out the attached flyer for more info!\nPlease let us know if you want to attend here so we know how much food to order.\nTo reduce the barrier for people travelling between campuses\, the BMI will reimburse your train tickets to attend the event (send your train tickets as a single pdf file to edne@epfl.ch within 2 weeks from the event).\n \nAs a reminder\, what this is about:\nWe’re having four events per year\, alternating between Geneva and Lausanne\, to try to bridge the gap between the two campuses.\nWe organize different activities each time to get to know our peers and share some of our science in a chill atmosphere.\nWe are looking forward to seeing many of you there!\n \nYour Neuro Night Show hosts\,\nDavide\, Ece\, Elsa\, Lana\, Lisa\, Martina\, Nishant\, Pol\, Sophia
-DTEND:20251126T200000Z
-LAST-MODIFIED:20251112T125203Z
-LOCATION:Geneva campus\, B01.06
-DTSTART:20251126T170000Z
+DESCRIPTION:This is a forwarded EDNE event\n==========\nHello fellow Neuro-PhDs!\n \nWe’re happy to announce the next \nNEURO NIGHT SHOW \nstarring you and your favorite Neuro-PhDs\, \nwith FREE drinks and PIZZA!\nOn Wednesday\, 17th of September at 18:00 on the Lausanne campus.\nIf the weather is nice\, we will have pizza at the lake! 🚣🍕☀️\nPlease let us know if you want to attend here so we know how much food to order.\nTo reduce the barrier for people travelling between campuses\, the BMI will reimburse your train tickets to attend the event.\n \nWhat this is about:\nWe’re having four events per year\, alternating between Geneva and Lausanne\, to try to bridge the gap between the two campuses.\nWe organize different activities each time to get to know our peers and share some of our science in a chill atmosphere.\nWe are looking forward to seeing many of you there!\n \nYour Neuro Night Show hosts\,\nDavide\, Ece\, Elsa\, Lana\, Lisa\, Martina\, Pol\, Sophia
+DTEND:20250917T183000Z
+LAST-MODIFIED:20250910T095727Z
+LOCATION:Lausanne campus
+DTSTART:20250917T160000Z
 STATUS:CONFIRMED
-SUMMARY:[EDNE] Neuro Night Show
+SUMMARY:EDNE Neuro Night Show
 TRANSP:OPAQUE
-UID:6t8fp95j8salphhkfhbtfphceq@google.com
+UID:06tapdmdgme44gvsgg74u0m2l4@google.com
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Plain text only (emojis and other Unicode characters are OK).\r\n lines
-DTEND:20251212T200000Z
-LOCATION:SV lobby
-DTSTART:20251212T160000Z
-SUMMARY:🎉 Exciting New Event
-UID:ghdiscussion_11
+CREATED:20250910T130436Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20250927
+DTEND;VALUE=DATE:20250928
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Join us on September 27th\, 2025 for a scenic hike at the Dent the Vaulion to see 8 lakes\, the Alps and the Mont Blanc! Here's all the infos: <br><br>Brief overview:<br>The hike takes about 3 hours\, is 10 km long and includes 440 m of elevation. We will start the hike from the train stop Le Pont and go up towards the mountain top\, passing a lake. For lunch\, we will stop at the restaurant at the top or you can bring your own lunch and picnic there. After lunch we will return to Le Pont to take the train back to Lausanne.<br><br>Itinerary: <br>Departure from Lausanne: We’ll take the train at 8:57 in Lausanne until Vallorbe and then at 9:50 until Le Pont.<br>Arrival at Le Pont: Approximately 10:00.<br>Lunch at 12:00.<br>Return: We plan to arrive back at the train station around 16:00\, with a return train between 16:30–17:00 back to Lausanne.<br>ADSV is covering transportation costs for the first 25 participants (with a half-fare card) who sign up via the link below. <br><br>Sign up here:<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSc5LNPntbP3eQfDNw-GZGehJSck-nSIwUrr5BNTmx_E3Gc-2Q/viewform?usp=header">https://docs.google.com/forms/d/e/1FAIpQLSc5LNPntbP3eQfDNw-GZGehJSck-nSIwUrr5BNTmx_E3Gc-2Q/viewform?usp=header</a><br><br>Deadline:<br>Please register by Wednesday\, September 24th\, at midnight if you’d like to secure a free train ticket. After that\, you’re still welcome to join the hike\, but you’ll need to cover your own transportation costs.<br><br>What to bring:<br>Plenty of water<br>Snacks or lunch (if you prefer not to eat at the restaurant)<br>Sunscreen<br>Your SBB half-fare card<br>Comfortable hiking shoes<br> <br>Links for more info on the hike and restaurant:<br><a href="https://schweizmobil.ch/en/hiking-in-switzerland/route-117">https://schweizmobil.ch/en/hiking-in-switzerland/route-117</a><br><a href="https://chaletbuvettedeladentdevaulion.com/">https://chaletbuvettedeladentdevaulion.com/</a>
+LAST-MODIFIED:20250919T191953Z
+LOCATION:Dent de Vaulion: https://schweizmobil.ch/en/hiking-in-switzerland/route-117
+STATUS:CONFIRMED
+SUMMARY:⛰️ ADSV Summer Hike
+TRANSP:TRANSPARENT
+UID:68ej1pg46ve4uui21sdr2e0sms@google.com
 END:VEVENT
 BEGIN:VEVENT
 CREATED:20251008T204113Z
@@ -197,32 +189,40 @@ TRANSP:OPAQUE
 UID:5vclp3a24tthmj9r1p8e4kk8on@google.com
 END:VEVENT
 BEGIN:VEVENT
-CREATED:20250910T130436Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20250927
-DTEND;VALUE=DATE:20250928
-DTSTAMP:20251204T130406Z
-DESCRIPTION:Join us on September 27th\, 2025 for a scenic hike at the Dent the Vaulion to see 8 lakes\, the Alps and the Mont Blanc! Here's all the infos: <br><br>Brief overview:<br>The hike takes about 3 hours\, is 10 km long and includes 440 m of elevation. We will start the hike from the train stop Le Pont and go up towards the mountain top\, passing a lake. For lunch\, we will stop at the restaurant at the top or you can bring your own lunch and picnic there. After lunch we will return to Le Pont to take the train back to Lausanne.<br><br>Itinerary: <br>Departure from Lausanne: We’ll take the train at 8:57 in Lausanne until Vallorbe and then at 9:50 until Le Pont.<br>Arrival at Le Pont: Approximately 10:00.<br>Lunch at 12:00.<br>Return: We plan to arrive back at the train station around 16:00\, with a return train between 16:30–17:00 back to Lausanne.<br>ADSV is covering transportation costs for the first 25 participants (with a half-fare card) who sign up via the link below. <br><br>Sign up here:<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSc5LNPntbP3eQfDNw-GZGehJSck-nSIwUrr5BNTmx_E3Gc-2Q/viewform?usp=header">https://docs.google.com/forms/d/e/1FAIpQLSc5LNPntbP3eQfDNw-GZGehJSck-nSIwUrr5BNTmx_E3Gc-2Q/viewform?usp=header</a><br><br>Deadline:<br>Please register by Wednesday\, September 24th\, at midnight if you’d like to secure a free train ticket. After that\, you’re still welcome to join the hike\, but you’ll need to cover your own transportation costs.<br><br>What to bring:<br>Plenty of water<br>Snacks or lunch (if you prefer not to eat at the restaurant)<br>Sunscreen<br>Your SBB half-fare card<br>Comfortable hiking shoes<br> <br>Links for more info on the hike and restaurant:<br><a href="https://schweizmobil.ch/en/hiking-in-switzerland/route-117">https://schweizmobil.ch/en/hiking-in-switzerland/route-117</a><br><a href="https://chaletbuvettedeladentdevaulion.com/">https://chaletbuvettedeladentdevaulion.com/</a>
-LAST-MODIFIED:20250919T191953Z
-LOCATION:Dent de Vaulion: https://schweizmobil.ch/en/hiking-in-switzerland/route-117
-STATUS:CONFIRMED
-SUMMARY:⛰️ ADSV Summer Hike
-TRANSP:TRANSPARENT
-UID:68ej1pg46ve4uui21sdr2e0sms@google.com
+DESCRIPTION:Plain text only (emojis and other Unicode characters are OK).\r\nMany lines
+DTEND:20251212T200000Z
+LOCATION:SV lobby
+DTSTART:20251212T160000Z
+SUMMARY:🎉 Exciting New Event
+UID:ghdiscussion_11
 END:VEVENT
 BEGIN:VEVENT
-CREATED:20250910T095713Z
+CREATED:20251112T125203Z
 SEQUENCE:0
 DTSTAMP:20251204T130406Z
-DESCRIPTION:This is a forwarded EDNE event\n==========\nHello fellow Neuro-PhDs!\n \nWe’re happy to announce the next \nNEURO NIGHT SHOW \nstarring you and your favorite Neuro-PhDs\, \nwith FREE drinks and PIZZA!\nOn Wednesday\, 17th of September at 18:00 on the Lausanne campus.\nIf the weather is nice\, we will have pizza at the lake! 🚣🍕☀️\nPlease let us know if you want to attend here so we know how much food to order.\nTo reduce the barrier for people travelling between campuses\, the BMI will reimburse your train tickets to attend the event.\n \nWhat this is about:\nWe’re having four events per year\, alternating between Geneva and Lausanne\, to try to bridge the gap between the two campuses.\nWe organize different activities each time to get to know our peers and share some of our science in a chill atmosphere.\nWe are looking forward to seeing many of you there!\n \nYour Neuro Night Show hosts\,\nDavide\, Ece\, Elsa\, Lana\, Lisa\, Martina\, Pol\, Sophia
-DTEND:20250917T183000Z
-LAST-MODIFIED:20250910T095727Z
-LOCATION:Lausanne campus
-DTSTART:20250917T160000Z
+DESCRIPTION:Forwarded from email titled "Save the date: Neuro Night Show - November 26th 18h00"\, 12.11.2025\n\n====================\n\nHello fellow Neuro-PhDs!\n \nDon’t forget to register for the next\nNEURO NIGHT SHOW \nstarring you and your favorite Neuro-PhDs\, \nwith     FREE drinks and PIZZA! \n \nOn Wednesday\, 26th of November at 18:00 on the Geneva campus (room B01.06).\nWe’re hosting an alumni event featuring former EDNE lab members who will share their experiences navigating the post-PhD job market.🧑‍🎓🎉 \nCheck out the attached flyer for more info!\nPlease let us know if you want to attend here so we know how much food to order.\nTo reduce the barrier for people travelling between campuses\, the BMI will reimburse your train tickets to attend the event (send your train tickets as a single pdf file to edne@epfl.ch within 2 weeks from the event).\n \nAs a reminder\, what this is about:\nWe’re having four events per year\, alternating between Geneva and Lausanne\, to try to bridge the gap between the two campuses.\nWe organize different activities each time to get to know our peers and share some of our science in a chill atmosphere.\nWe are looking forward to seeing many of you there!\n \nYour Neuro Night Show hosts\,\nDavide\, Ece\, Elsa\, Lana\, Lisa\, Martina\, Nishant\, Pol\, Sophia
+DTEND:20251126T200000Z
+LAST-MODIFIED:20251112T125203Z
+LOCATION:Geneva campus\, B01.06
+DTSTART:20251126T170000Z
 STATUS:CONFIRMED
-SUMMARY:EDNE Neuro Night Show
+SUMMARY:[EDNE] Neuro Night Show
 TRANSP:OPAQUE
-UID:06tapdmdgme44gvsgg74u0m2l4@google.com
+UID:6t8fp95j8salphhkfhbtfphceq@google.com
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20250910T094950Z
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Want to make the most of these last summer evenings? Join us for a relaxing yoga session on Wednesday\, 17th September at 6:30 PM.<br><br>📍 Location: Parc Bourget (if the weather’s nice)\, otherwise we’ll move indoors to the SG foyer. We’ll confirm the exact spot by email 30 minutes before the event.<br><br>💰 Fee: 5 CHF per person<br>👉 Sign up &amp\; pay here: Google Form <a href="https://forms.gle/Z4SGCq7WPKrAPGqC9">https://forms.gle/Z4SGCq7WPKrAPGqC9</a><br><br>Don’t forget to bring:<br>- comfy sports clothes<br>- a water bottle<br>- your mat (or something to lie on)<br><br>It’ll be the perfect way to unwind mid-week and we’d love to see you there!
+DTEND:20250917T183000Z
+LAST-MODIFIED:20250910T095807Z
+LOCATION:Parc Bourget\, or SG foyer in case of bad weather
+DTSTART:20250917T163000Z
+STATUS:CONFIRMED
+SUMMARY:🧘 Yoga with ADSV
+TRANSP:OPAQUE
+UID:2gfvvr0g1fi8a6rg77c28lsk7l@google.com
 END:VEVENT
 BEGIN:VEVENT
 CREATED:20251112T125409Z
