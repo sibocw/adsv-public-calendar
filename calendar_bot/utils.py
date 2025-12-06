@@ -128,8 +128,8 @@ def _parse_event_name(name_str: str) -> str:
 def _parse_event_description(desc_str: str) -> str:
     """Parse event description (can be multi-line)."""
     lines = desc_str.strip().split("\n")
-    lines = [line for line in lines if line not in ("```plain text", "```")]
-    return "\n".join(lines)
+    lines = [line for line in lines if not line.startswith("```")]
+    return "\n".join(lines).strip()
 
 
 def _parse_time(time_str: str) -> tuple[datetime, bool]:
