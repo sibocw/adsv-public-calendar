@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Plain text only (emojis and other Unicode characters are OK).\r\n lines
+DTEND:20251212T200000Z
+LOCATION:SV lobby
+DTSTART:20251212T160000Z
+SUMMARY:🎉 Exciting New Event
+UID:ghdiscussion_11
+END:VEVENT
+END:VCALENDAR
