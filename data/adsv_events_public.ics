@@ -58,20 +58,6 @@ TRANSP:OPAQUE
 UID:3ucr2np0na6c04kq5aq4uumpmb@google.com
 END:VEVENT
 BEGIN:VEVENT
-CREATED:20250910T094950Z
-SEQUENCE:0
-DTSTAMP:20251204T130406Z
-DESCRIPTION:Want to make the most of these last summer evenings? Join us for a relaxing yoga session on Wednesday\, 17th September at 6:30 PM.<br><br>📍 Location: Parc Bourget (if the weather’s nice)\, otherwise we’ll move indoors to the SG foyer. We’ll confirm the exact spot by email 30 minutes before the event.<br><br>💰 Fee: 5 CHF per person<br>👉 Sign up &amp\; pay here: Google Form <a href="https://forms.gle/Z4SGCq7WPKrAPGqC9">https://forms.gle/Z4SGCq7WPKrAPGqC9</a><br><br>Don’t forget to bring:<br>- comfy sports clothes<br>- a water bottle<br>- your mat (or something to lie on)<br><br>It’ll be the perfect way to unwind mid-week and we’d love to see you there!
-DTEND:20250917T183000Z
-LAST-MODIFIED:20250910T095807Z
-LOCATION:Parc Bourget\, or SG foyer in case of bad weather
-DTSTART:20250917T163000Z
-STATUS:CONFIRMED
-SUMMARY:🧘 Yoga with ADSV
-TRANSP:OPAQUE
-UID:2gfvvr0g1fi8a6rg77c28lsk7l@google.com
-END:VEVENT
-BEGIN:VEVENT
 CREATED:20250910T095435Z
 SEQUENCE:0
 DTSTAMP:20251204T130406Z
@@ -84,14 +70,6 @@ STATUS:CONFIRMED
 SUMMARY:🎃🪰 Happy Hour — hosted by Ramdya lab
 TRANSP:OPAQUE
 UID:5eej2tn8tg8a34s6ng8asnv7oc@google.com
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:```plain text\r\n🎄 Final Happy Hour of the Year – Christmas Edition! 🎅\r\nNext Friday the 12th at 5 PM in SV Hall\, join us for the final Happy Hour of the year – 🎄The Christmas Edition🎄\, hosted by the Barth Lab!\r\nWe warmly invite you to a festive gathering featuring Glühwein 🍷 and Christmas cookies & treats 🍪\r\nCome for the holiday drinks\, stay for the cheer! Don’t forget to wear your favorite holiday sweater or accessory to spread the festive spirit.\r\n✨If your lab is interested in hosting Happy Hours in 2026\, just reach out to Dominic (dominic.dallosto@epfl.ch) or Pitt (pitt.meyer@epfl.ch) ✨\r\nLet’s celebrate the season together before the holidays begin – we can’t wait to see you there!\r\nMerry Xmas & happy new year!\r\nADSV\r\n```
-DTEND:20251212T200000Z
-LOCATION:SV lobby
-DTSTART:20251212T160000Z
-SUMMARY:🎄 ADSV Happy Hour\, by Barth Lab
-UID:ghdiscussion_8
 END:VEVENT
 BEGIN:VEVENT
 CREATED:20251014T090230Z
@@ -121,18 +99,18 @@ TRANSP:OPAQUE
 UID:0ekqlm9aoenfc1d2of1o7va1sf@google.com
 END:VEVENT
 BEGIN:VEVENT
-CREATED:20251112T125203Z
+CREATED:20250910T095713Z
 SEQUENCE:0
 DTSTAMP:20251204T130406Z
-DESCRIPTION:Forwarded from email titled "Save the date: Neuro Night Show - November 26th 18h00"\, 12.11.2025\n\n====================\n\nHello fellow Neuro-PhDs!\n \nDon’t forget to register for the next\nNEURO NIGHT SHOW \nstarring you and your favorite Neuro-PhDs\, \nwith     FREE drinks and PIZZA! \n \nOn Wednesday\, 26th of November at 18:00 on the Geneva campus (room B01.06).\nWe’re hosting an alumni event featuring former EDNE lab members who will share their experiences navigating the post-PhD job market.🧑‍🎓🎉 \nCheck out the attached flyer for more info!\nPlease let us know if you want to attend here so we know how much food to order.\nTo reduce the barrier for people travelling between campuses\, the BMI will reimburse your train tickets to attend the event (send your train tickets as a single pdf file to edne@epfl.ch within 2 weeks from the event).\n \nAs a reminder\, what this is about:\nWe’re having four events per year\, alternating between Geneva and Lausanne\, to try to bridge the gap between the two campuses.\nWe organize different activities each time to get to know our peers and share some of our science in a chill atmosphere.\nWe are looking forward to seeing many of you there!\n \nYour Neuro Night Show hosts\,\nDavide\, Ece\, Elsa\, Lana\, Lisa\, Martina\, Nishant\, Pol\, Sophia
-DTEND:20251126T200000Z
-LAST-MODIFIED:20251112T125203Z
-LOCATION:Geneva campus\, B01.06
-DTSTART:20251126T170000Z
+DESCRIPTION:This is a forwarded EDNE event\n==========\nHello fellow Neuro-PhDs!\n \nWe’re happy to announce the next \nNEURO NIGHT SHOW \nstarring you and your favorite Neuro-PhDs\, \nwith FREE drinks and PIZZA!\nOn Wednesday\, 17th of September at 18:00 on the Lausanne campus.\nIf the weather is nice\, we will have pizza at the lake! 🚣🍕☀️\nPlease let us know if you want to attend here so we know how much food to order.\nTo reduce the barrier for people travelling between campuses\, the BMI will reimburse your train tickets to attend the event.\n \nWhat this is about:\nWe’re having four events per year\, alternating between Geneva and Lausanne\, to try to bridge the gap between the two campuses.\nWe organize different activities each time to get to know our peers and share some of our science in a chill atmosphere.\nWe are looking forward to seeing many of you there!\n \nYour Neuro Night Show hosts\,\nDavide\, Ece\, Elsa\, Lana\, Lisa\, Martina\, Pol\, Sophia
+DTEND:20250917T183000Z
+LAST-MODIFIED:20250910T095727Z
+LOCATION:Lausanne campus
+DTSTART:20250917T160000Z
 STATUS:CONFIRMED
-SUMMARY:[EDNE] Neuro Night Show
+SUMMARY:EDNE Neuro Night Show
 TRANSP:OPAQUE
-UID:6t8fp95j8salphhkfhbtfphceq@google.com
+UID:06tapdmdgme44gvsgg74u0m2l4@google.com
 END:VEVENT
 BEGIN:VEVENT
 CREATED:20250910T130436Z
@@ -203,18 +181,18 @@ TRANSP:OPAQUE
 UID:5vclp3a24tthmj9r1p8e4kk8on@google.com
 END:VEVENT
 BEGIN:VEVENT
-CREATED:20250910T095713Z
+CREATED:20251112T125203Z
 SEQUENCE:0
 DTSTAMP:20251204T130406Z
-DESCRIPTION:This is a forwarded EDNE event\n==========\nHello fellow Neuro-PhDs!\n \nWe’re happy to announce the next \nNEURO NIGHT SHOW \nstarring you and your favorite Neuro-PhDs\, \nwith FREE drinks and PIZZA!\nOn Wednesday\, 17th of September at 18:00 on the Lausanne campus.\nIf the weather is nice\, we will have pizza at the lake! 🚣🍕☀️\nPlease let us know if you want to attend here so we know how much food to order.\nTo reduce the barrier for people travelling between campuses\, the BMI will reimburse your train tickets to attend the event.\n \nWhat this is about:\nWe’re having four events per year\, alternating between Geneva and Lausanne\, to try to bridge the gap between the two campuses.\nWe organize different activities each time to get to know our peers and share some of our science in a chill atmosphere.\nWe are looking forward to seeing many of you there!\n \nYour Neuro Night Show hosts\,\nDavide\, Ece\, Elsa\, Lana\, Lisa\, Martina\, Pol\, Sophia
-DTEND:20250917T183000Z
-LAST-MODIFIED:20250910T095727Z
-LOCATION:Lausanne campus
-DTSTART:20250917T160000Z
+DESCRIPTION:Forwarded from email titled "Save the date: Neuro Night Show - November 26th 18h00"\, 12.11.2025\n\n====================\n\nHello fellow Neuro-PhDs!\n \nDon’t forget to register for the next\nNEURO NIGHT SHOW \nstarring you and your favorite Neuro-PhDs\, \nwith     FREE drinks and PIZZA! \n \nOn Wednesday\, 26th of November at 18:00 on the Geneva campus (room B01.06).\nWe’re hosting an alumni event featuring former EDNE lab members who will share their experiences navigating the post-PhD job market.🧑‍🎓🎉 \nCheck out the attached flyer for more info!\nPlease let us know if you want to attend here so we know how much food to order.\nTo reduce the barrier for people travelling between campuses\, the BMI will reimburse your train tickets to attend the event (send your train tickets as a single pdf file to edne@epfl.ch within 2 weeks from the event).\n \nAs a reminder\, what this is about:\nWe’re having four events per year\, alternating between Geneva and Lausanne\, to try to bridge the gap between the two campuses.\nWe organize different activities each time to get to know our peers and share some of our science in a chill atmosphere.\nWe are looking forward to seeing many of you there!\n \nYour Neuro Night Show hosts\,\nDavide\, Ece\, Elsa\, Lana\, Lisa\, Martina\, Nishant\, Pol\, Sophia
+DTEND:20251126T200000Z
+LAST-MODIFIED:20251112T125203Z
+LOCATION:Geneva campus\, B01.06
+DTSTART:20251126T170000Z
 STATUS:CONFIRMED
-SUMMARY:EDNE Neuro Night Show
+SUMMARY:[EDNE] Neuro Night Show
 TRANSP:OPAQUE
-UID:06tapdmdgme44gvsgg74u0m2l4@google.com
+UID:6t8fp95j8salphhkfhbtfphceq@google.com
 END:VEVENT
 BEGIN:VEVENT
 CREATED:20251112T125409Z
@@ -229,5 +207,19 @@ STATUS:CONFIRMED
 SUMMARY:[BMI] End of Year Party
 TRANSP:OPAQUE
 UID:1eode9nhpnhmpb49iret2ftv35@google.com
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20250910T094950Z
+SEQUENCE:0
+DTSTAMP:20251204T130406Z
+DESCRIPTION:Want to make the most of these last summer evenings? Join us for a relaxing yoga session on Wednesday\, 17th September at 6:30 PM.<br><br>📍 Location: Parc Bourget (if the weather’s nice)\, otherwise we’ll move indoors to the SG foyer. We’ll confirm the exact spot by email 30 minutes before the event.<br><br>💰 Fee: 5 CHF per person<br>👉 Sign up &amp\; pay here: Google Form <a href="https://forms.gle/Z4SGCq7WPKrAPGqC9">https://forms.gle/Z4SGCq7WPKrAPGqC9</a><br><br>Don’t forget to bring:<br>- comfy sports clothes<br>- a water bottle<br>- your mat (or something to lie on)<br><br>It’ll be the perfect way to unwind mid-week and we’d love to see you there!
+DTEND:20250917T183000Z
+LAST-MODIFIED:20250910T095807Z
+LOCATION:Parc Bourget\, or SG foyer in case of bad weather
+DTSTART:20250917T163000Z
+STATUS:CONFIRMED
+SUMMARY:🧘 Yoga with ADSV
+TRANSP:OPAQUE
+UID:2gfvvr0g1fi8a6rg77c28lsk7l@google.com
 END:VEVENT
 END:VCALENDAR
