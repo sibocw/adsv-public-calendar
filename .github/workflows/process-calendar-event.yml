@@ -14,7 +14,8 @@ jobs:
     # Only run if the discussion is in the "Announcements" category
     # (this is the only category that requires write access to open a thread)
     if: |
-      github.event.discussion.category.name == 'Announcements'
+      github.event.discussion.category.name == 'Announcements' &&
+      contains(github.event.discussion.labels.*.name, 'Event')
     runs-on: ubuntu-latest
     environment:
       name: github-pages

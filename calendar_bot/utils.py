@@ -160,8 +160,8 @@ def _parse_location(loc_str: str) -> str:
 
 
 class EventFormParserError(Exception):
-    """Exception raised when parsing GitHub issue fails."""
+    """Exception raised when parsing GitHub discussion form fails."""
 
-    def __new__(cls, message: str) -> "EventFormParserError":
-        print(f"EventFormParserError: {message}")
-        return super().__new__(message)
+    def __init__(self, message: str):
+        print(f"EventFormParserError: {message}", flush=True)
+        super().__init__(message)
