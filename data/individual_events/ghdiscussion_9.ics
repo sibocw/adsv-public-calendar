@@ -4,9 +4,9 @@ PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20251213
 DTEND;VALUE=DATE:20251216
-DESCRIPTION:```plain text\nPlain text only (emojis and other Unicode characters are OK).\r\nWeekend\n```
+DESCRIPTION:```plain text\r\nPlain text only (emojis and other Unicode characters are OK).\r\nWeekend\r
 LOCATION:SV lobby
-SUMMARY:🎉 Weekend test
+SUMMARY:🎉 Weekend test 2
 UID:ghdiscussion_9
 END:VEVENT
 END:VCALENDAR
