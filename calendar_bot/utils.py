@@ -65,7 +65,7 @@ def make_event_from_github_discussion_body(
     # Create event
     event = ics.Event(uid=event_uid)
     event.name = _parse_event_name(fields["Event Name"])
-    event.description = fields["Event Description"]
+    event.description = _parse_event_description(fields["Event Description"])
     event.location = _parse_location(fields["Location"])
 
     # Parse times
@@ -123,6 +123,13 @@ def _parse_event_name(name_str: str) -> str:
     if "\n" in name_str:
         raise EventFormParserError("Event Name should be a single line.")
     return name_str
+
+
+def _parse_event_description(desc_str: str) -> str:
+    """Parse event description (can be multi-line)."""
+    lines = desc_str.strip().split("\n")
+    lines = [line for line in lines if line not in ("```plain text", "```")]
+    return "\n".join(lines)
 
 
 def _parse_time(time_str: str) -> tuple[datetime, bool]:
