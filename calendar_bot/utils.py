@@ -5,59 +5,85 @@ from pathlib import Path
 from re import match
 
 
-def make_event_from_github_issue_str(
-    event_uid: str, issue_str: str, timezone_ianacode: str = "Europe/Zurich"
+def make_event_from_github_discussion_body(
+    event_uid: str, body: str, timezone_ianacode: str = "Europe/Zurich"
 ) -> ics.Event:
-    """Parse a GitHub issue string into an iCalendar event."""
+    """Parse a GitHub discussion form body into an iCalendar event.
+
+    The body format is:
+    ### Event Name
+
+    value
+
+    ### Event Description
+
+    value
+
+    etc.
+    """
     try:
         tzinfo = ZoneInfo(timezone_ianacode)
     except Exception as e:
-        raise GithubIssueParserError(
+        raise EventFormParserError(
             f"Invalid timezone IANA code: {timezone_ianacode}"
         ) from e
 
-    lines = [s.strip() for s in issue_str.splitlines()]
+    # Parse the form-style body
+    fields = {}
+    lines = body.strip().split("\n")
+
+    current_field = None
+    current_content = []
+
+    for line in lines:
+        if line.startswith("### "):
+            # Save previous field if exists
+            if current_field:
+                fields[current_field] = "\n".join(current_content).strip()
+            # Start new field
+            current_field = line[4:].strip()
+            current_content = []
+        elif current_field and line.strip():
+            current_content.append(line)
+
+    # Save last field
+    if current_field:
+        fields[current_field] = "\n".join(current_content).strip()
+
+    # Validate required fields
+    required_fields = [
+        "Event Name",
+        "Event Description",
+        "Start Time",
+        "End Time",
+        "Location",
+    ]
+    for field in required_fields:
+        if field not in fields or not fields[field]:
+            raise EventFormParserError(f"Missing required field: {field}")
+
+    # Create event
     event = ics.Event(uid=event_uid)
+    event.name = _parse_event_name(fields["Event Name"])
+    event.description = fields["Event Description"]
+    event.location = _parse_location(fields["Location"])
 
-    for field in ["Event Name", "Event Description", "Time", "Location"]:
-        try:
-            start_line_idx = lines.index(f"### {field}")
-        except ValueError as e:
-            raise GithubIssueParserError(
-                f"Header '### {field}' not found in the issue string."
-            ) from e
+    # Parse times
+    start_dt, start_is_all_day = _parse_time(fields["Start Time"])
+    end_dt, end_is_all_day = _parse_time(fields["End Time"])
 
-        # Find first triple-backticked block after the header
-        backticks_lines_idx = []
-        for i in range(start_line_idx + 1, len(lines)):
-            if lines[i].startswith("```"):
-                backticks_lines_idx.append(i)
-                if len(backticks_lines_idx) == 2:
-                    break
-        
-        if len(backticks_lines_idx) < 2:
-            raise GithubIssueParserError(
-                f"Could not find complete code block for field '{field}'"
-            )
-        
-        content_lines = lines[backticks_lines_idx[0] + 1 : backticks_lines_idx[1]]
-        content = "\n".join(content_lines).strip()
+    if start_is_all_day != end_is_all_day:
+        raise EventFormParserError(
+            "Start and end times must both be either date-only or datetime format"
+        )
 
-        if field == "Event Name":
-            event.name = _parse_event_name(content)
-        elif field == "Event Description":
-            event.description = content
-        elif field == "Time":
-            start_dt, end_dt, is_all_day = _parse_time(content)
-            if is_all_day:
-                event.begin = start_dt
-                event.end = end_dt
-                event.make_all_day()
-            else:
-                event.begin = start_dt.replace(tzinfo=tzinfo)
-                event.end = end_dt.replace(tzinfo=tzinfo)
-        elif field == "Location":
-            event.location = _parse_location(content)
+    if start_is_all_day:
+        event.begin = start_dt
+        event.end = end_dt
+        event.make_all_day()
+    else:
+        event.begin = start_dt.replace(tzinfo=tzinfo)
+        event.end = end_dt.replace(tzinfo=tzinfo)
 
     return event
 
@@ -95,47 +121,47 @@ def write_events_to_calendar(events: list[ics.Event], filepath: Path) -> None:
 def _parse_event_name(name_str: str) -> str:
     """Parse and validate event name (must be single line)."""
     if "\n" in name_str:
-        raise GithubIssueParserError("Event Name should be a single line.")
+        raise EventFormParserError("Event Name should be a single line.")
     return name_str
 
 
-def _parse_time(time_str: str) -> tuple[datetime, datetime, bool]:
-    """Parse time string into start, end datetime and all-day flag."""
-    time_match = match(r"^FROM (.+?) TO (.+?)$", time_str.upper())
-    if not time_match:
-        raise GithubIssueParserError(
-            "Invalid time format: should be 'FROM <start> TO <end>'"
-        )
-    from_str, to_str = time_match.groups()
+def _parse_time(time_str: str) -> tuple[datetime, bool]:
+    """Parse a single time string into datetime and all-day flag.
+
+    Returns:
+        tuple: (datetime, is_all_day)
+    """
+    time_str = time_str.strip()
 
     # Try full datetime format
     try:
-        start = datetime.strptime(from_str, "%Y-%m-%d %H:%M:%S")
-        end = datetime.strptime(to_str, "%Y-%m-%d %H:%M:%S")
-        return start, end, False
+        dt = datetime.strptime(time_str, "%Y-%m-%d %H:%M:%S")
+        return dt, False
     except ValueError:
         pass
 
     # Try date-only format
     try:
-        start = datetime.strptime(from_str, "%Y-%m-%d")
-        end = datetime.strptime(to_str, "%Y-%m-%d")
-        return start, end, True
+        dt = datetime.strptime(time_str, "%Y-%m-%d")
+        return dt, True
     except ValueError:
         pass
 
-    raise GithubIssueParserError(
-        "Could not parse times. Use format 'YYYY-MM-DD HH:MM:SS' or 'YYYY-MM-DD'"
+    raise EventFormParserError(
+        f"Could not parse time '{time_str}'. Use format 'YYYY-MM-DD HH:MM:SS' or 'YYYY-MM-DD'"
     )
 
 
 def _parse_location(loc_str: str) -> str:
     """Parse and validate location (must be single line)."""
     if "\n" in loc_str:
-        raise GithubIssueParserError("Location should be a single line.")
+        raise EventFormParserError("Location should be a single line.")
     return loc_str
 
 
-class GithubIssueParserError(Exception):
+class EventFormParserError(Exception):
     """Exception raised when parsing GitHub issue fails."""
-    pass
+
+    def __new__(cls, message: str) -> "EventFormParserError":
+        print(f"EventFormParserError: {message}")
+        return super().__new__(message)

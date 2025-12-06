@@ -1,13 +1,11 @@
 title: "[EVENT] "
-labels: ["EVENT TO PUBLISH"]
 body:
   - type: input
     id: event-name
     attributes:
       label: Event Name
       description: |
-        The name of the event.
-        It's this name that will show up on the calendar, not the thread title above.
+        The name of the event. This is the name that will show up on the calendar, not the thread title above.
       value: 🎉 Exciting New Event
     validations:
       required: true
@@ -16,10 +14,10 @@ body:
     attributes:
       label: Event Description
       description: |
-        The text body of the calendar event.
-        Use Unicode only (no Markdown/HTML, but emojis are OK).
+        The text body of the calendar event. Plain text only (emojis OK).
       value: |
-        Description of the event goes here.
+        The text editor box says "Markdown is supported", but it's not true for calendar events.
+        Please use plain text only (emojis and other Unicode characters are OK).
     validations:
       required: true
   - type: input
@@ -27,9 +25,8 @@ body:
     attributes:
       label: Start Time
       description: |
-        Start time in 'YYYY-MM-DD HH:MM:SS' format in Swiss local time (summer time will
-        be handled automatically). For all-day/multi-day events (e.g. ski retreat), just
-        provide 'YYYY-MM-DD' alone (inclusive).
+        Start time in 'YYYY-MM-DD HH:MM:SS' format in Swiss local time. Summer time will be handled automatically.
+        For all-day/multi-day events (e.g. ski retreat), just provide 'YYYY-MM-DD' alone (inclusive).
       value: "2025-12-12 17:00:00"
     validations:
       required: true
@@ -38,9 +35,8 @@ body:
     attributes:
       label: End Time
       description: |
-        End time in 'YYYY-MM-DD HH:MM:SS' format in Swiss local time (summer time will
-        be handled automatically). For all-day/multi-day events (e.g. ski retreat), just
-        provide 'YYYY-MM-DD' alone (inclusive).
+        End time in 'YYYY-MM-DD HH:MM:SS' format in Swiss local time. Summer time will be handled automatically.
+        For all-day/multi-day events (e.g. ski retreat), just provide 'YYYY-MM-DD' alone (inclusive).
       value: "2025-12-12 21:00:00"
     validations:
       required: true

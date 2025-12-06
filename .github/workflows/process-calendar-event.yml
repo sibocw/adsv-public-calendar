@@ -1,8 +1,8 @@
 name: Process Calendar Event
 
 on:
-  issues:
-    types: [opened, edited, closed]
+  discussion:
+    types: [created, edited, deleted]
 
 # Ensure only one workflow runs at a time to prevent conflicts
 concurrency:
@@ -11,8 +11,10 @@ concurrency:
 
 jobs:
   process-event:
-    # Only run if the issue has the "EVENT TO PUBLISH" label
-    if: contains(github.event.issue.labels.*.name, 'EVENT TO PUBLISH')
+    # Only run if the discussion is in the "Announcements" category
+    # (this is the only category that requires write access to open a thread)
+    if: |
+      github.event.discussion.category.name == 'Announcements'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -20,7 +22,7 @@ jobs:
     
     permissions:
       contents: write
-      issues: write
+      discussions: write
       pages: write
       id-token: write
     
@@ -38,24 +40,34 @@ jobs:
       - name: Install package
         run: pip install -e .
       
-      - name: Process issue (add/update)
-        if: github.event.action != 'closed'
+      - name: Process discussion (add/update)
+        if: github.event.action != 'deleted'
         id: process
         env:
-          ISSUE_BODY: ${{ github.event.issue.body }}
+          DISCUSSION_BODY: ${{ github.event.discussion.body }}
         run: |
           python -m calendar_bot.update_calendar \
-            --issue_number "${{ github.event.issue.number }}" \
-            --body "$ISSUE_BODY"
+            --discussion_number "${{ github.event.discussion.number }}" \
+            --body "$DISCUSSION_BODY" 2> process_error.log || true
+          if [ -f process_error.log ]; then
+            echo "error_output<<EOF" >> $GITHUB_OUTPUT
+            cat process_error.log >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          fi
         continue-on-error: true
       
-      - name: Remove event (on close)
-        if: github.event.action == 'closed'
+      - name: Remove event (on delete)
+        if: github.event.action == 'deleted'
         id: remove
         run: |
           python -m calendar_bot.update_calendar \
-            --issue_number "${{ github.event.issue.number }}" \
-            --delete
+            --discussion_number "${{ github.event.discussion.number }}" \
+            --delete 2> remove_error.log || true
+          if [ -f remove_error.log ]; then
+            echo "error_output<<EOF" >> $GITHUB_OUTPUT
+            cat remove_error.log >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          fi
         continue-on-error: true
       
       - name: Commit and push changes
@@ -69,10 +81,10 @@ jobs:
             echo "No changes to commit"
             echo "changed=false" >> $GITHUB_OUTPUT
           else
-            if [ "${{ github.event.action }}" = "closed" ]; then
-              git commit -m "Remove calendar event from closed issue #${{ github.event.issue.number }}"
+            if [ "${{ github.event.action }}" = "deleted" ]; then
+              git commit -m "Remove calendar event from deleted discussion #${{ github.event.discussion.number }}"
             else
-              git commit -m "Update calendar from issue #${{ github.event.issue.number }}"
+              git commit -m "Update calendar from discussion #${{ github.event.discussion.number }}"
             fi
             git push
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -93,53 +105,95 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
       
-      - name: Comment on issue if successful (add/update)
-        if: steps.process.outcome == 'success' && github.event.action != 'closed'
+      - name: Comment on discussion if successful (add/update)
+        if: steps.process.outcome == 'success' && github.event.action != 'deleted'
         uses: actions/github-script@v7
         with:
           script: |
-            const issueNumber = context.issue.number;
+            const discussionNumber = context.payload.discussion.number;
             const repoUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}`;
-            const eventFileUrl = `${repoUrl}/blob/main/data/individual_events/ghissue_${issueNumber}.ics`;
+            const eventFileUrl = `${repoUrl}/blob/main/data/individual_events/ghdiscussion_${discussionNumber}.ics`;
             const calendarFileUrl = `${repoUrl}/blob/main/data/adsv_events_public.ics`;
+            const pageUrl = '${{ steps.deployment.outputs.page_url }}adsv_events_public.ics';
             
-            github.rest.issues.createComment({
-              issue_number: issueNumber,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+            // Add comment to discussion
+            const mutation = `
+              mutation($discussionId: ID!, $body: String!) {
+                addDiscussionComment(input: {discussionId: $discussionId, body: $body}) {
+                  comment {
+                    id
+                  }
+                }
+              }
+            `;
+            
+            await github.graphql(mutation, {
+              discussionId: context.payload.discussion.node_id,
               body: `✅ **Calendar event has been successfully processed and published!**\n\n` +
                     `📅 [View your event file](${eventFileUrl})\n` +
-                    `📆 [View full calendar](${calendarFileUrl})`
-            })
+                    `📆 [View full calendar](${calendarFileUrl})\n\n` +
+                    `**You can close this discussion to remove the event from the calendar.**``
+            });
       
-      - name: Comment on issue if successful (close)
-        if: steps.remove.outcome == 'success' && github.event.action == 'closed'
+      - name: Comment on discussion if successful (delete)
+        if: steps.remove.outcome == 'success' && github.event.action == 'deleted'
         uses: actions/github-script@v7
         with:
           script: |
             const repoUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}`;
             const calendarFileUrl = `${repoUrl}/blob/main/data/adsv_events_public.ics`;
             
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+            const mutation = `
+              mutation($discussionId: ID!, $body: String!) {
+                addDiscussionComment(input: {discussionId: $discussionId, body: $body}) {
+                  comment {
+                    id
+                  }
+                }
+              }
+            `;
+            
+            await github.graphql(mutation, {
+              discussionId: context.payload.discussion.node_id,
               body: `🗑️ **Calendar event has been removed.**\n\n` +
                     `📆 [View updated calendar](${calendarFileUrl})`
-            })
+            });
       
-      - name: Comment on issue if failed
+      - name: Comment on discussion if failed
         if: steps.process.outcome == 'failure' || steps.remove.outcome == 'failure'
         uses: actions/github-script@v7
         with:
           script: |
             const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
             
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: `❌ **Failed to process calendar event.**\n\n` +
-                    `Please check that your issue follows the correct format from the template.\n\n` +
-                    `🔍 [View workflow logs](${runUrl}) for details.`
-            })
+            // Get error output from the failed step
+            const errorOutput = '${{ steps.process.outputs.error_output || steps.remove.outputs.error_output }}';
+            
+            // Extract EventFormParserError messages
+            const parserErrors = errorOutput
+              .split('\n')
+              .filter(line => line.startsWith('EventFormParserError: '))
+              .join('\n');
+            
+            let errorMessage = `❌ **Failed to process calendar event.**\n\n`;
+            
+            if (parserErrors) {
+              errorMessage += `**Parser error details:**\n\`\`\`\n${parserErrors}\n\`\`\`\n\n`;
+            }
+            
+            errorMessage += `🔍 [View workflow logs](${runUrl}) for more information. Modify the discussion to fix the issue, or close this thread and start anew.`;
+            
+            const mutation = `
+              mutation($discussionId: ID!, $body: String!) {
+                addDiscussionComment(input: {discussionId: $discussionId, body: $body}) {
+                  comment {
+                    id
+                  }
+                }
+              }
+            `;
+            
+            await github.graphql(mutation, {
+              discussionId: context.payload.discussion.node_id,
+              body: errorMessage
+            });
