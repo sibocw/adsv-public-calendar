@@ -2,7 +2,7 @@ name: Process Calendar Event
 
 on:
   discussion:
-    types: [created, edited, deleted]
+    types: [created, edited, closed]
 
 # Ensure only one workflow runs at a time to prevent conflicts
 concurrency:
@@ -41,7 +41,7 @@ jobs:
         run: pip install -e .
       
       - name: Process discussion (add/update)
-        if: github.event.action != 'deleted'
+        if: github.event.action != 'closed'
         id: process
         env:
           DISCUSSION_BODY: ${{ github.event.discussion.body }}
@@ -56,8 +56,8 @@ jobs:
           fi
         continue-on-error: true
       
-      - name: Remove event (on delete)
-        if: github.event.action == 'deleted'
+      - name: Remove event (on close)
+        if: github.event.action == 'closed'
         id: remove
         run: |
           python -m calendar_bot.update_calendar \
@@ -81,8 +81,8 @@ jobs:
             echo "No changes to commit"
             echo "changed=false" >> $GITHUB_OUTPUT
           else
-            if [ "${{ github.event.action }}" = "deleted" ]; then
-              git commit -m "Remove calendar event from deleted discussion #${{ github.event.discussion.number }}"
+            if [ "${{ github.event.action }}" = "closed" ]; then
+              git commit -m "Remove calendar event from closed discussion #${{ github.event.discussion.number }}"
             else
               git commit -m "Update calendar from discussion #${{ github.event.discussion.number }}"
             fi
@@ -106,7 +106,7 @@ jobs:
         uses: actions/deploy-pages@v4
       
       - name: Comment on discussion if successful (add/update)
-        if: steps.process.outcome == 'success' && github.event.action != 'deleted'
+        if: steps.process.outcome == 'success' && github.event.action != 'closed'
         uses: actions/github-script@v7
         with:
           script: |
@@ -135,8 +135,8 @@ jobs:
                     `**To modify the event, simply edit the post above. To remove the event from the calendar, close this discussion below.**`
             });
       
-      - name: Comment on discussion if successful (delete)
-        if: steps.remove.outcome == 'success' && github.event.action == 'deleted'
+      - name: Comment on discussion if successful (close)
+        if: steps.remove.outcome == 'success' && github.event.action == 'closed'
         uses: actions/github-script@v7
         with:
           script: |
