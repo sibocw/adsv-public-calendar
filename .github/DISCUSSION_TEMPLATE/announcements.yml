@@ -7,7 +7,7 @@ body:
       label: Event Name
       description: |
         The name of the event.
-        It's this name that will show up on the calendar, not the thread title above."
+        It's this name that will show up on the calendar, not the thread title above.
       value: 🎉 Exciting New Event
     validations:
       required: true
