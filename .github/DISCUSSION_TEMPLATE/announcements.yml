@@ -30,7 +30,7 @@ body:
         Start time in 'YYYY-MM-DD HH:MM:SS' format in Swiss local time (summer time will
         be handled automatically). For all-day/multi-day events (e.g. ski retreat), just
         provide 'YYYY-MM-DD' alone (inclusive).
-      value: 2025-12-12 17:00:00
+      value: "2025-12-12 17:00:00"
     validations:
       required: true
   - type: input
@@ -41,7 +41,7 @@ body:
         End time in 'YYYY-MM-DD HH:MM:SS' format in Swiss local time (summer time will
         be handled automatically). For all-day/multi-day events (e.g. ski retreat), just
         provide 'YYYY-MM-DD' alone (inclusive).
-      value: 2025-12-12 21:00:00
+      value: "2025-12-12 21:00:00"
     validations:
       required: true
   - type: input
